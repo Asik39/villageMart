@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\sliderModel;
 class homeController extends Controller
 {
-    function homeIndex(){
-       
+    function homeIndex(){       
         return view('Home');
     }
 
