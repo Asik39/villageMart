@@ -21,7 +21,7 @@
                                 <div class="card m-2 p-4 card-hover">
                                     <p class="store-name aqua-deep">{{$data->store}}</p>
                                     <p class="product-title bolded my-4 blue">{{$data->categories}}</p>
-                                    <img src="{{asset('assets/images/perfume.jpg')}}" class="img-fluid">
+                                    <img src="{{asset('assets/images/'.$data->img_address)}}" class="img-fluid">
                                     <p class="price fs-4">{{$data->amount}}</p>
                                 </div>
                             </a>

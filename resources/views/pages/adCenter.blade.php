@@ -6,7 +6,7 @@
                         <div class="card card-hover">
                             <div class="d-flex align-items-center flex-column flex-sm-row">
                                 
-                                <img src="{{asset('assets/images/laptop.png')}}">
+                                <img src="{{asset('assets/images/'.$data->img_address)}}">
                                 <div>
                                     <p>{{$data->title}}</p>
                                     <a href="" class="bolded">{{$data->more}}</a>

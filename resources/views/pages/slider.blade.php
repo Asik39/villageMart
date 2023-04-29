@@ -22,12 +22,14 @@
 
             <div class="section-bottom">
                 <div class="owl-carousel owl-theme carousel-1">
+                    @foreach($slider as $data)
                     <a href="">
                         <div class="item">
-                            <img src="{{asset('assets/images/banner_1.jpg')}}">
+                            <img src="{{asset('assets/images/'.$data->img_address)}}">                           
                         </div>
                     </a>
-                    <a href="">
+                    @endforeach
+                    <!-- <a href="">
                         <div class="item">
                             <img src="{{asset('assets/images/banner_2.jpg')}}">
                         </div>
@@ -46,7 +48,7 @@
                         <div class="item">
                             <img src="{{asset('assets/images/banner_5.jpg')}}">
                         </div>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </section>
