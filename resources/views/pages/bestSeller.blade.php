@@ -13,20 +13,21 @@
                         <li><a class="">Accesoriess</a></li>
                     </div>
                 </ul>
-            <div class="box">
-                <div class="owl-carousel owl-theme carousel-4">
-                    @foreach($featured as $data)
-                        <div class="item">
-                            <a href="">
-                                <div class="card m-2 p-4 card-hover">
-                                    <p class="store-name aqua-deep">{{$data->store}}</p>
-                                    <p class="product-title bolded my-4 blue">{{$data->categories}}</p>
-                                    <img src="{{asset('assets/images/'.$data->img_address)}}" class="img-fluid">
-                                    <p class="price fs-4">{{$data->amount}}</p>
-                                </div>
-                            </a>
+                <div class="row">                        
+                        @foreach($featured as $data)
+                        <div class="col-4">
+                            <div class="item">
+                                <a href="">
+                                    <div class="card m-2 p-4 card-hover">
+                                        <p class="store-name aqua-deep">{{$data->store}}</p>
+                                        <p class="product-title bolded my-4 blue">{{$data->categories}}</p>
+                                        <img src="{{asset('assets/images/'.$data->img_address)}}" class="img-fluid">
+                                        <p class="price fs-4">{{$data->amount}}</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     @endforeach
-                </div>
-            </div>
+
+                    </div>
         </section>

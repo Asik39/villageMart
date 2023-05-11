@@ -17,9 +17,9 @@
                         <li><a class="mx-3">On Sale</a></li>
                         <li><a class="mx-3">Top Rated</a></li>
                     </ul>
-                    <div class="box">
-                        <div class="owl-carousel owl-theme carousel-3">
-                            @foreach($featured as $data)
+                    <div class="row">                        
+                        @foreach($featured as $data)
+                        <div class="col-4">
                             <div class="item">
                                 <a href="">
                                     <div class="card m-2 p-4 card-hover">
@@ -30,10 +30,9 @@
                                     </div>
                                 </a>
                             </div>
-                            @endforeach
-                           
                         </div>
+                    @endforeach
+
                     </div>
-                </div>
-            </div>
+                    
         </section>

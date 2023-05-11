@@ -20,10 +20,10 @@
                 <a href="">
                     <i class="fa-solid fa-retweet icon"></i>
                 </a>
-                <a href="">
+                <a href="{{url('./whisList')}}">
                     <i class="fa-regular fa-heart icon"></i>
                 </a>
-                <a href="">
+                <a href="{{url('./myAccount')}}">
                     <i class="fa-solid fa-user icon"></i>
                 </a>
                 <a href="">

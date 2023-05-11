@@ -1,0 +1,17 @@
+.user_icon{
+	height: 30px;
+	width: 30px;
+}
+
+.search01{
+	margin-left: 30%;
+}
+.sidebar{
+	width:300px;
+	background: rgb(28, 28, 99);	
+	height: 100vh;
+	padding: 0px;
+}
+.sidebar ul li a{
+	color: aliceblue;
+}

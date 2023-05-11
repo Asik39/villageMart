@@ -9,11 +9,17 @@
     <link rel="icon" href="{{asset('assets/images/Fav_Icon.png')}}">
     <!-- bootstrap link -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap_css/bootstrap.min.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- css link -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/sass.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/footer.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/responsive.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/track.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/login.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/wish_list.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/product_details.css')}}">
+   
     <!-- font awesome link -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/font_awesome/all.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/font_awesome/regular.css')}}">
@@ -36,11 +42,18 @@
     @include('layout.footer')
     <!-- Script link -->
     <script src="{{asset('assets/js/jquery-v3.6.1.js')}}"></script>
+    <script src="{{asset('assets/js/jquery-3.6.4.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap_js/bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins/owl.carousel.min.js')}}"></script>
     <script src="{{asset('assets/js/custome.js')}}"></script>
+    <script src="{{asset('assets/js/custom.js')}}"></script>
     <script src="{{asset('assets/js/custome_jquery.js')}}"></script>
     <script src="{{asset('assets/js/carousel.js')}}"></script>
+    <!-- <script src="{{asset('assets/js/axios.min.js')}}"></script> -->
 
+    
+    <script type="text/javascript">
+        // getCatData();
+    </script>
 </body>
 </html>

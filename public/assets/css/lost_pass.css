@@ -1,0 +1,21 @@
+#allcom{
+	margin-top: 5%;
+	margin-left: 30%;
+	height: 400px;
+	width: 400px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 255, 0.06);
+	padding: 10px;
+}
+
+#simline{
+	width: 380px;
+	border: 1px solid gray;
+}
+
+#in{
+	height: 30px;
+	width: 380px;
+	border-radius: 50px;
+	border-color: rgba(0, 0, 0, 0.2);
+}

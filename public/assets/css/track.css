@@ -1,0 +1,14 @@
+#allcom{
+	height: 500px;
+	width: 900px;
+	justify-content: center;
+	margin-left: 22%;
+	margin-bottom: 50px;
+}
+
+#in{
+	height: 40px;
+	border-radius: 20px;
+	border-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+}

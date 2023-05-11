@@ -1,0 +1,44 @@
+
+
+#but1{
+	height: 40px;
+	width: 40px;
+	border: none;
+	background-color: rgba(0, 0, 255, 0.5);
+	border-radius: 7px;
+	transition: 0.2s;
+}
+
+#but1:hover{
+	height: 43px;
+	width: 43px;
+	border: none;
+	background-color: rgba(255, 0, 0, 0.5);
+	border-radius: 7px;
+}
+
+
+
+
+#wish2{
+	width: 100px;
+	height: 65px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+#wish2:hover{
+	width: 103px;
+	height: 68px;
+}
+
+
+#Product_text{
+	font-size: 18px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+#Product_text:hover{
+	font-size: 20px;
+}

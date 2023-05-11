@@ -1,93 +1,32 @@
 
-    <section class="sidebar">
+<section class="sidebar">
         <div class="brand">
-            <a href="">Village Mart</a>
+            <a href="{{url('./')}}">Village Mart</a>
         </div>
-        <ul class="side-menu">
+        <ul class="side-menu" id="category">
             <li><a href="" class="active bolded"><i class="fa-solid fa-list icon"></i> All Departments</a></li>
             <li><a href="" class="bolded">Value of the Day</a></li>
             <li><a href="" class="bolded">Top 100 Offers</a></li>
             <li><a href="" class="bolded">New Arrivals</a></li>
+            @foreach($category as $row)
             <li class="dropdown">
-                <a>Computer Accessories <i class="fa-solid fa-chevron-right right-icon"></i></a>
+                <a>{{$row->category}} <i class="fa-solid fa-chevron-right right-icon"></i>      
+                </a>
+            
                 <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
+                    @foreach($subCat as $data)
+                    @if($row->id==$data->category_id)
+                    <li><a href="">{{$data->sub_category}}</a></li>
+                    @endif
+                    @endforeach
                 </ul>
+            
             </li>
-            <li class="dropdown">
-                <a>Cameras, Audio & video <i class="fa-solid fa-chevron-right right-icon"></i></a>
-                <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a>Mobiles & Tablets <i class="fa-solid fa-chevron-right right-icon"></i></a>
-                <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a>Movies, Musics & Video Games <i class="fa-solid fa-chevron-right right-icon"></i></a>
-                <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a>Tv & Audio <i class="fa-solid fa-chevron-right right-icon"></i></a>
-                <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a>Watches & Eyewear <i class="fa-solid fa-chevron-right right-icon"></i></a>
-                <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a>Car, Motorbike & Industrial <i class="fa-solid fa-chevron-right right-icon"></i></a>
-                <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a>Accessories <i class="fa-solid fa-chevron-right right-icon"></i></a>
-                <ul class="dropdown-item">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </li>
+          @endforeach
+         
+          
         </ul>
-    </section>        
+    </section>   
+  
+
    

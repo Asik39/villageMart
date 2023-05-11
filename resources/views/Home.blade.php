@@ -4,6 +4,9 @@
 
 @section('content')
 <section class="main">
+@if(Session::has('msg'))
+            <p class="alert alert-danger">{{ Session::get('msg') }}</p>
+        @endif
     @include('pages.slider')
     @include('pages.adCenter')
     @include('pages.featured')
